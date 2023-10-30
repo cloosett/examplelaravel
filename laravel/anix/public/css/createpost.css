@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.navigation a{
+    color: white;
+    font-size: 17px;
+    margin-left: 40px;
+}
+a:hover{
+    font-size: 20px;
+    transition: .3s;
+}
+.navigation h2{
+    color: white;
+    font-size: 27px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user p{
+    color: white;
+}
+main{
+    height: 90vh;
+    background-color: forestgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add_post{
+    width: 60vw;
+    height: 60vh;
+    background-color: darkslategray;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+}
+.add_post h2{
+    color: white;
+}
+.add_post input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    margin-top: 20px;
+}
+.add_post button{
+    margin-top: 50px;
+    width: 300px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    border: 2px solid darkred;
+    border-radius: 5px;
+}
+.add_post button:hover{
+    width: 305px;
+    height: 35px;
+    transition: .2s;
+}
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #d07979;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

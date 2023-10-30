@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: forestgreen;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.navigation a{
+    color: white;
+    font-size: 17px;
+    margin-left: 40px;
+}
+a:hover{
+    font-size: 20px;
+    transition: .3s;
+}
+.navigation h2{
+    color: white;
+    font-size: 27px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user p{
+    color: white;
+}
+
+main{
+    height: auto;
+    background-color: forestgreen;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50vw;
+    background-color: darkslategray;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: white;
+}
+button:hover{
+    transition: .3s;
+    background-color: rgba(47, 79, 79, 0.78);
+    height: 32px;
+}
+
+.userPost{
+    width: 50vw;
+    height: 73vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.userPost header{
+    width: 50vw;
+    height: 40vh;
+    background-color: #a8a7a7;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+header .nickname{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+header .date{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.nickname img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.userPost .post{
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+.post .postTitle{
+    height: 13vh;
+    width: 42vw;
+
+
+}
+.post img{
+    max-width: 500px;
+    max-height: 600px;
+}
+.post .buttonLike{
+    display: flex;
+    flex-direction: row;
+    width: 42vw;
+    height: 10vh;
+    align-items: center;
+}
+.buttonLike button{
+    width: 150px;
+    height: 5vh;
+    margin: 0;
+    background-color: red;
+}
+.buttonLike img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.buttonLike button:hover{
+    transition: .3s;
+    background-color: red;
+    height: 42px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #d07979;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttonlogin {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #d07979;
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttoncreate{
+    display: inline-block;
+    padding: 10px 370px;
+    margin-top: 15px;
+    background-color: #89e51e;
+    color: #969393;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logoutbutton {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 15px;
+    background-color: #e0aa07;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profilebutton {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 15px;
+    background-color: #e0aa07;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#name{
+    width: 75%;
+    height: 30px;
+    margin-top: 60px;
+}
+.profileavatar{
+    margin-top: 150px;
+}
+.input-container {
+    display: inline-block;
+    border: 2px solid #ece9e9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25%;
+    background-color: #4a5568;
+}
+#avatar{
+    margin-right: 80px;
+    margin-top: 25px;
+}
+.profileinput{
+    position: relative;
+}
+
+.profileinput{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.profileinput .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #007bff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profileinput {
+    transform: scaleX(1);
+}
+.textprofile{
+    font-size: 25px;
+    margin-left: 115px;
+}

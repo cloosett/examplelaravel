@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Raleway', sans-serif;
+            background-color: darkcyan;
+        }
+        main{
+            width: 35vw;
+            height: 30vh;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .header{
+            background-color: rgba(0, 139, 139, 0.3);
+            height: 25%;
+            width: 100%;
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 27px;
+        }
+        .header p{
+            margin: 0;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #password, #emeil{
+            width: 75%;
+            height: 30px;
+            margin-top: 25px;
+        }
+        .org{
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .org button{
+            width: 80px;
+            height: 25px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            background-color: rgba(0, 139, 139, 0.1);
+        }
+        a {
+            text-decoration: none; /* Відключити будь-яке підкреслення */
+            color: inherit; /* Успадковувати колір від батька (наприклад, текстового блоку) */
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="header">
+        <p>Вхід в особистий кабінет</p>
+    </div>
+    <form method="POST" action="{{route('stores')}}">
+        @csrf
+        <input type="text" name="email" id="emeil" value="{{ old('email') }}" placeholder="Логін або email">
+        @error('email')
+        <p>{{$message}}</p>
+        @enderror
+        @if(session('status'))
+            <p>{{ session('status') }}</p>
+        @endif
+        <input type="password" name="password" id="password" placeholder="password">
+        <div class="org">
+            <label> Запам'ятай мене
+                <input type="checkbox" name="rememberMe">
+            </label>
+            <a href="{{route('forgot.view')}}">Забув пароль?</a>
+            <button type="submit">Вхід</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.navigation a{
+    color: white;
+    font-size: 17px;
+    margin-left: 40px;
+}
+a:hover{
+    font-size: 20px;
+    transition: .3s;
+}
+.navigation h2{
+    color: white;
+    font-size: 27px;
+}
+.registration_buttons{
+    display: flex;
+    align-items: center;
+}
+.registration, .login{
+    width: 90px;
+    height: 30px;
+    color: white;
+    margin-right: 20px;
+    background-color: red;
+    border: 2px solid darkred;
+    border-radius: 10%;
+}
+.registration:hover{
+    width: 95px;
+    height: 35px;
+    transition: .2s;
+}
+.login:hover{
+    width: 95px;
+    height: 35px;
+    transition: .2s;
+}
+main{
+    height: 90vh;
+    background-color: forestgreen;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.photo{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo .image{
+    width: 15vw;
+    height: 25vh;
+    border: 1px solid black;
+}
+.form{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plate{
+    height: 40vh;
+    width: 40vw;
+    background-color: darkslategray;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.plate h2{
+    color: white;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    margin-top: 20px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.buttonupdate{
+    margin-top: 50px;
+    width: 150px;
+    height: 46px;
+    color: white;
+    margin-right: 20px;
+    background-color: #5d5854;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+}
+.user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.logoutbutton {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 15px;
+    background-color: #e00d1f;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
